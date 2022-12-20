@@ -1,14 +1,22 @@
 <template>
 <div>
     <div class="sidebar shadow">
-        <div class="text">
-            <h1>E-KTP APP</h1>
-        </div>
-        <div class="link">
-            <p class="home text-center text-white shadow"><router-link to="/home" ><h5><img src="../assets/home.png" alt="" width="25px" class="justify-content-center">Beranda</h5> </router-link></p>
-            <p class="tambah text-center shadow"><router-link to="/addKK" ><h5><img src="../assets/plus.png" alt="" width="22px">Tambah KK</h5></router-link></p>
-            <br><br>
-            <p  class="out text-center shadow"><router-link to="/"><h5>Keluar</h5> </router-link></p>
+        <div>
+            <div class="text">
+                <img src="" alt="">
+                <h1>E-KTP APP</h1>
+            </div>
+            <div class="link">
+                <div class="home">
+                    <p class=" text-center shadow"><router-link to="/home" ><h5><img src="../assets/home.png" alt="" width="25px" class="justify-content-center">Beranda</h5> </router-link></p>
+                </div>
+                <div class="tambah">
+                    <p class=" text-center shadow "><router-link to="/addKK" ><h5><img src="../assets/plus.png" alt="" width="22px">Tambah KK</h5></router-link></p>
+                </div>
+                <div class="out">
+                    <p class="out text-center shadow"><router-link to="/"><h5>Keluar</h5> </router-link></p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -27,12 +35,15 @@ export default {
     height: 675px;
     margin: 5px;
     border-radius: 10px;
+    position: fixed;
     
 }
 .text{
     font-family:'Arial Narrow Bold';
     text-decoration-line :underline;
     text-align: center;
+    margin-top: 30px;
+    
 }
 a{
     text-decoration: none;
@@ -44,9 +55,9 @@ a{
     margin-left: 9%;
 }
 .home{
-    background-color: white;
+    /* background-color: white; */
     width: 200px;
-    height: 30px;
+    height: 50px;
     border-radius: 9px;
     font-family: 'Arial Narrow Bold';
 }
@@ -55,9 +66,9 @@ a{
     transform: translateY(-2px);
 }
 .tambah{
-    background-color: white;
+    /* background-color: white; */
     width: 200px;
-    height: 30px;
+    height: 50px;
     border-radius: 9px;
     margin-top: 10px;
     font-family: 'Arial Narrow Bold';
@@ -68,16 +79,15 @@ a{
     
 }
 .out{
-    background-color: white;
+    /* background-color: white; */
     width: 200px;
-    height: 30px;
+    height: 50px;
     border-radius: 9px;
     font-family: 'Arial Narrow Bold';
-    margin-top: 150%;
+    margin-top: 130%;
 }
 .out:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
     transform: translateY(-2px);
 }
-
 </style>
