@@ -226,7 +226,7 @@ height: 100%;
   font-size: 100%;
   padding: 0.8em;
   outline: none;
-  border: 2px solid rgb(200, 200, 200);
+  border: 2px solid black;
   background-color: transparent;
   border-radius: 20px;
   width: 100%;
@@ -240,7 +240,7 @@ height: 100%;
   margin-left: 0.5em;
   pointer-events: none;
   transition: all 0.3s ease;
-  color: rgb(100, 100, 100);
+  color: black;
 }
 
 .inputGroup :is(input:focus, input:valid)~label {
@@ -252,7 +252,7 @@ height: 100%;
 }
 
 .inputGroup :is(input:focus, input:valid) {
-  border-color: rgb(150, 150, 200);
+  border-color: black;
 }
 .btn-danger{
     margin-right: 27px;
