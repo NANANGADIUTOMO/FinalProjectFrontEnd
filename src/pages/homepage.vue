@@ -5,8 +5,8 @@
             <sidebar></sidebar>
         </div>
         <div>
-            <mainComponent v-show="!formAlert" @deleteEmit="changgeFormAlert"></mainComponent> 
-            <formAlert v-show="formAlert" textAlert="didelete"></formAlert>
+            <mainComponent v-show="!formAlert" @deleteEmit="changgeFormAlert" class="main"></mainComponent> 
+            <formAlert v-show="formAlert" textAlert="didelete" class="alert"></formAlert>
         </div>
     </div>
 </div>
@@ -37,6 +37,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.main{
+    margin-left: 257px;
+}
+.alert{
+    margin-left: 70%;
+}
 </style>
