@@ -357,6 +357,8 @@ export default {
 .table{
     margin-left: 88px;
     width: 1243px;
+    border-radius: 10px;
+    
 }
 .textbawah{
     margin-left: 88px;
