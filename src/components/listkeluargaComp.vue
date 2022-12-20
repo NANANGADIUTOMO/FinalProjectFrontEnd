@@ -11,35 +11,35 @@
                     </div>
                 </div>
             </div>
-                <div>
-                    <div class="table table-striped table-bordered table-hover mt-4 bg-light" cellspacing="0">
+                <div class="table" >
+                    <div class="table table-striped table-bordered table-hover mt-4 " cellspacing="0">
                             <h1 class="text-center my-4">LIST DATA ANGGOTA KELUARGA</h1>
                                 <table class="table table-striped table-border ">
-                                    <thead>
-                                        <tr class="table-success ">
-                                            <th scope="col-3">No</th>
-                                            <th scope="col">Nik</th>
-                                            <th scope="col">Nama</th>
-                                            <th scope="col">Jenis Kelamin</th>
-                                            <th scope="col">Kepala Keluarga</th>
-                                            <th scope="col">Action</th>
+                                    <thead width="80%">
+                                        <tr class="table-success text-center">
+                                            <th width="1%">No</th>
+                                            <th width="2%">Nik</th>
+                                            <th width="3%">Nama</th>
+                                            <th width="3%">Jenis Kelamin</th>
+                                            <th width="2%">Kepala Keluarga</th>
+                                            <th width="5%">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="(item, index) in datakeluarga" :key="index" >
-                                            <th>{{ index + 1}}</th>
-                                            <td>{{ item.nik }}</td>
-                                            <td>{{ item.nama }}</td>
-                                            <td>{{ item.jenis_kelamin }}</td>
-                                            <td>{{ item.kepala_keluarga }}</td>
-                                            <td class="d-flex">
-                                                <router-link :to="{ name : 'lihatfams', params: {id : item.id}}" @click.prevent="$emit('updateAnggota', item)" class="btndetail text-white text-center">Detail</router-link>
+                                        <tr v-for="(item, index) in datakeluarga" class="text-center" :key="index" width="100%">
+                                            <th width="1%">{{ index + 1}}</th>
+                                            <td width="2%">{{ item.nik }}</td>
+                                            <td width="2%">{{ item.nama }}</td>
+                                            <td width="2%">{{ item.jenis_kelamin }}</td>
+                                            <td width="2%">{{ item.kepala_keluarga }}</td>
+                                            <td class="d-flex justify-content-center" >
+                                                <router-link :to="{ name : 'lihatfams', params: {idk : item.id}}" @click.prevent="$emit('updateAnggota', item)" class="btndetail text-white text-center">Detail</router-link>
                                                 <button class="btn btn-sm btn-danger " @click.prevent="deleteAnggotaFunc(item.id)" >Hapus </button>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>                                
-                                <div v-if="datakeluarga.length < 1" class=" d-flex justify-content-center text-center" style="background-color:grey;">Tidak Ada Data</div>
+                                <div v-if="datakeluarga.length < 1" class=" textbawah d-flex justify-content-center text-white" style="background-color:grey;">Tidak Ada Data</div>
                             </div>
 
             </div>
@@ -122,6 +122,7 @@ export default {
     margin:5px ;
     padding: 20px;
     border-radius: 10px;
+    margin-left: 270px;
 }
 .satu{
     width: 250px;
@@ -129,6 +130,7 @@ export default {
     background-color:cadetblue;
     margin-top: 50px;
     border-radius: 30px;
+    
 }
 .dua{
     width: 250px;
@@ -351,6 +353,15 @@ export default {
 .btn-success:active {
   box-shadow: black 0 3px 7px inset;
   transform: translateY(2px);
+}
+.table{
+    margin-left: 88px;
+    width: 1243px;
+}
+.textbawah{
+    margin-left: 88px;
+    width: 1243px;
+    text-align: center;
 }
 
 </style>
