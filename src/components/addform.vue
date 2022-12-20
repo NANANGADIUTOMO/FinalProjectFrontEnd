@@ -206,7 +206,7 @@ export default {
 <style scoped>
 .corn{
     width: 1245px;
-    height: 590px;
+    height: 592px;
     border: 2px solid burlywood;
     padding: 5px;
     margin-top: 8px;
