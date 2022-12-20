@@ -21,6 +21,9 @@ export default {
 </script>
 
 <style scoped>
-
+.addform{
+    margin-left: 9px; 
+    
+}
 
 </style>
