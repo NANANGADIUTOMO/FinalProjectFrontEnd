@@ -28,7 +28,7 @@
 
                             <!-- Password input -->
                             <div class="inputGroup">
-                                <input v-model="datalogin.password" type="text" required="" autocomplete="off">
+                                <input v-model="datalogin.password" type="password" required="" autocomplete="off">
                                 <label for="name">Password</label>
                             </div>
                             <!-- <div class="form-outline mb-3">
