@@ -38,7 +38,7 @@ methods: {
     height: 190px;
     background-color: azure;
     margin-top: 20%;
-    margin-left: 27%;
+    margin-left: 70%;
 }
 .alert:focus {
   box-shadow: azurek 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, azure 0 -3px 0 inset;
