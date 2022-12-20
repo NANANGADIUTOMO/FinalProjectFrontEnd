@@ -16,6 +16,7 @@
                                             <div class="col-sm-12">
                                         <input v-model="datakeluarga.nik" 
                                         type="number" class="form-control" id="inputNomor" :disabled="!disable">
+                                        <p v-if="validate2" class="textwarning"> <small>Maaf! Nomor NIK Anda Sudah Digunakan</small> </p>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -46,14 +47,14 @@
                                     </div>
                                 </div>
                             <div>
-                                <div class="d-flex justify-content-left mx-4 mb-3 mb-lg-4 mt-5">
+                                
+                                <div class="d-flex justify-content-left mx-4 mb-3 mb-lg-4 mt-3">
                                         <button type="button" v-show="updtShow" @click="kancel" class="btn btn-21 btn-lg" >Batal</button>
 
                                         <button v-show="title =='Tambah'" class="btn btn-14 btn-lg" >{{buttonValue}}</button>
 
                                         <button  v-show="updtShow" @click="clikk" class="btn btn-20">{{buttonValue}}</button>
                                 </div>
-                                <p v-if="validate2" class="textwarning">Maaf! Nomor NIK Anda Sudah Digunakan </p>
                             </div>
                         </div>
 
@@ -152,7 +153,6 @@ export default {
                     this.textAlertkelu = "Ditambahkan"
                 })
                 .catch(e => {
-                    // console.log(e.response.data.trace.includes("Duplicate Entry"));
                     let dadang = e.response.data.trace.includes("Duplicate Entry");
                     if(dadang){
                         this.validate2 = false;
@@ -179,7 +179,7 @@ export default {
         },
         kancel(){
             location.reload();
-            // this.formalertanggota = false;
+            
         },
         clikk(){
             this.datakeluarga.id_kk = this.$route.params.id
@@ -192,12 +192,12 @@ export default {
             .catch(e =>{
                 console.log(e);
             })
-        }
+        },
     },
     props :['propsAnggota',],
     mounted(){
         if(this.$route.name == 'lihatfams'){
-            this.getAnggotaById(this.$route.params.id);
+            this.getAnggotaById(this.$route.params.idk);
             this.buttonValue = "update"
             this.title = "Detail"
             this.uptbutton = true
@@ -218,6 +218,7 @@ export default {
     margin-top: 5px;
     border-radius: 10px;
     background-color: white;
+    margin-left: 260px;
 }
 .corn h3{
     margin-left: 20px;
@@ -242,9 +243,8 @@ export default {
 .rose{
     border: 2px solid black;
     width: 99%;
-    height: 490px;
-    margin-top: 6px;
-    /* margin-left: 17px; */
+    height: 487px;
+    margin-top: 2px;
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -285,6 +285,7 @@ export default {
   will-change: box-shadow,transform;
   font-size: 18px;
   margin-right: 10px;
+  margin-bottom: 0;
 }
 
 .btn-15:focus {
