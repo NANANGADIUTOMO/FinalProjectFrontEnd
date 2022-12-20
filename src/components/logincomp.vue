@@ -4,7 +4,7 @@
             <div>
                 <section class="vh-98">
                     <div class="container-fluid h-custom">
-                        <div class="row d-flex justify-content-center align-items-center h-98">
+                        <div class="row d-flex justify-content-center align-items-center h-98">    
                         <div class="col-md-9 col-lg-6 col-xl-5">
                             <img src="../assets/ktp.png"
                             class="img-fluid" alt="Sample image">
@@ -46,6 +46,7 @@
                             </form>
                         </div>
                         </div>
+                       
                     </div>
                     <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
                         <!-- Copyright -->
@@ -70,7 +71,8 @@ data (){
             "email" : null,
             "password" : null,
         },
-        massage : false
+        massage : false,
+        load : false
     }
 },
 methods :{
@@ -147,7 +149,7 @@ height: 100%;
   font-size: 100%;
   padding: 0.8em;
   outline: none;
-  border: 2px solid rgb(200, 200, 200);
+  border: 2px solid black;
   background-color: transparent;
   border-radius: 20px;
   width: 100%;
@@ -161,7 +163,7 @@ height: 100%;
   margin-left: 0.5em;
   pointer-events: none;
   transition: all 0.3s ease;
-  color: rgb(100, 100, 100);
+  color: black;
 }
 
 .inputGroup :is(input:focus, input:valid)~label {
@@ -173,7 +175,7 @@ height: 100%;
 }
 
 .inputGroup :is(input:focus, input:valid) {
-  border-color: rgb(150, 150, 200);
+  border-color: black;
 }
 .btn-primary{
     width: 274px;
@@ -182,6 +184,5 @@ height: 100%;
     margin-top: 62px;
     border-bottom-right-radius: 6px 2px;
     border-bottom-left-radius: 3px 4px;
-    
 }
 </style>
