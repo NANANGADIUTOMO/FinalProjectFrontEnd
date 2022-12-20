@@ -39,7 +39,7 @@ methods: {
     height: 190px;
     background-color: azure;
     margin-top: 20%;
-    margin-left: 27%;
+    margin-left: 70%;
 }
 .btn-13{
     align-items: center;
