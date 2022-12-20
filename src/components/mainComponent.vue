@@ -16,39 +16,40 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="table table-striped table-bordered table-hover mt-4" cellspacing="0">
-                    <h1 class="text-center my-4">DATA KARTU KELUARGA</h1>
-                        <table class="table table-striped table-border ">
-                            <thead>
-                                <tr class="table-success ">
-                                    <th scope="col-3">No</th>
-                                    <th scope="col">Nomor KK</th>
-                                    <th scope="col">Alamat</th>
-                                    <th scope="col">Kota Kode pos</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="(item, index) in kakadata" :key="index">
-                                    <th>{{index + 1}}</th>
-                                    <td>{{item.nomor_kk}}</td>
-                                    <td>{{item.alamat}}</td>
-                                    <td>{{item.kode_pos}}</td>
-                                    <td class="d-flex">
-                                        <router-link :to="{ name : 'detailKK', params: {id : item.id}}" @click.prevent="$emit('updateKaka', item)" class="btndetail btn-pryimary text-center text-white">Detail</router-link>
-                                        <button class="btn btn-sm btn-danger " @click.prevent="deleteKartufunc(item.id)" >Hapus </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div v-if="kakadata.length < 1" class=" d-flex justify-content-center text-center" style="background-color:grey;">Tidak Ada Data</div>
+                    <div class="table mt-3">
+                        <div class="table table-striped table-bordered table-hover mt-4" cellspacing="0">
+                            <h1 class="text-center my-4">DATA KARTU KELUARGA</h1>
+                                <table class="table table-striped table-border ">
+                                    <thead>
+                                        <tr class="table-success text-center ">
+                                            <th scope="col-3">No</th>
+                                            <th scope="col">Nomor KK</th>
+                                            <th scope="col">Alamat</th>
+                                            <th scope="col">Kota Kode pos</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr v-for="(item, index) in kakadata" :key="index" class="text-center">
+                                        <th>{{index + 1}}</th>
+                                        <td>{{item.nomor_kk}}</td>
+                                        <td>{{item.alamat}}</td>
+                                        <td>{{item.kode_pos}}</td>
+                                        <td class="d-flex justify-content-center">
+                                            <router-link :to="{ name : 'detailKK', params: {id : item.id}}" @click.prevent="$emit('updateKaka', item)" class="btndetail btn-pryimary text-center text-white">Detail</router-link>
+                                            <button class="btn btn-sm btn-danger " @click.prevent="deleteKartufunc(item.id)" >Hapus </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div v-if="kakadata.length < 1" class=" d-flex justify-content-center text-center" style="background-color:grey;">Tidak Ada Data</div>
+                        </div>
                     </div>
                 <div>
             </div>
         </div>
     </div>
-    <formAlert v-show="formAlert" :textAlert="textAlert"></formAlert>
+    <formAlert v-show="formAlert" :textAlert="textAlert" class="alert"></formAlert>
 </div>
   
 </template>
@@ -122,7 +123,7 @@ export default {
 }
 .breadcrumb{
     background-color: beige;
-    width: 1240px;
+    width: 1235px;
     height: 220px;
     margin:5px ;
     padding: 20px;
@@ -274,4 +275,5 @@ export default {
     font-family: 'Arial Narrow Bold';
     font-size: 27px;
 }
+
 </style>
