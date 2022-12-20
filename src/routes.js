@@ -32,7 +32,7 @@ export default[
         component : tambahkeluarga,
     },
     {
-        path : "/lihatfams/:id",
+        path : "/detailKK/:id/listanggota/lihatfams/:idk",
         name : 'lihatfams', 
         component : lihatanggota
     },
