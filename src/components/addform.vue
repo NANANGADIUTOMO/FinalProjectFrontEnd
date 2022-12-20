@@ -3,7 +3,7 @@
     <div>
             <div v-if="!formalert">
                  <div>
-                    <div class="d-flex justify-content-left mx-4 mt-3 mb-lg-4">
+                    <div  class="btnatas mt-3 mb-lg-4">
                         <router-link to="/home" class=" btn button-30">Kembali</router-link>
                         <button v-show="uptbtn" @click="upttog" class="button-31">Perbarui Data Keluarga</button>
                         <router-link v-show="title != 'Tambah'"  :to="{name : '/listanggota'}" class="button-30">Lihat Anggota Keluarga</router-link>
@@ -21,6 +21,7 @@
                                                     <div class="col-sm-12 ">
                                                 <input v-model="kakadata.nomor_kk"
                                                 type="number" class="form-control" id="inputNomor" :disabled="!disable" required>
+                                                <p v-if="validate" class="textvalidate"><small> Mohon Maaf! Nomor Kartu Keluarga Sudah Digunakan </small></p>
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -57,7 +58,6 @@
                                                 <button  v-show="updateShow" class="btn btn-19">{{buttonValue}}</button>
                                         </div>
                                     </div>
-                                    <p v-if="validate" class="textvalidate">Mohon Maaf! Nomor Kartu Keluarga Sudah Digunakan </p>
                                 </div>
 
                                 <div class="melati">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
         </div>
-            <formalert v-else :textAlert="textAlert"></formalert>
+            <formalert v-else :textAlert="textAlert" class="alert"></formalert>
     </div>
 </div>
 </template>
@@ -205,13 +205,14 @@ export default {
 
 <style scoped>
 .corn{
-    width: 1250px;
+    width: 1245px;
     height: 590px;
     border: 2px solid burlywood;
     padding: 5px;
     margin-top: 8px;
     border-radius: 10px;
     background-color: white;
+    margin-left: 260px;
 }
 .corn h3{
     margin-left: 20px;
@@ -425,5 +426,7 @@ export default {
 .textvalidate{
     color: red;
 }
-
+.btnatas{
+    margin-left: 270px;
+}
 </style>
