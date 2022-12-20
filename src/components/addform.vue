@@ -20,7 +20,7 @@
                                                 <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold " >Nomor Kartu Keluarga</label>
                                                     <div class="col-sm-12 ">
                                                 <input v-model="kakadata.nomor_kk"
-                                                type="number" class="form-control" id="inputNomor" :disabled="!disable" required>
+                                                type="number" class="form-control" id="inputNomor" :disabled="!disable" required="" placeholder="No KK">
                                                 <p v-if="validate" class="textvalidate"><small> Mohon Maaf! Nomor Kartu Keluarga Sudah Digunakan </small></p>
                                             </div>
                                         </div>
@@ -28,7 +28,7 @@
                                                 <label for="inputAlamat" class="col-sm-7 col-form-label mt-2 fw-bold">Alamat</label>
                                                     <div class="col-sm-12">
                                                 <textarea v-model="kakadata.alamat"
-                                                name="" id="" cols="10" rows="4" class="form-control" required :disabled="!disable"></textarea>
+                                                    name="" id="" cols="10" rows="4" class="form-control" required :disabled="!disable" placeholder="Alamat"></textarea>
                                             </div>
                                         </div>
                                         <div class="d-flex">
@@ -36,14 +36,14 @@
                                                     <label for="inputRt" class="col-sm-2 col-form-label mt-5 fw-bold">Rt</label>
                                                         <div class="col-sm-5">
                                                     <input v-model="kakadata.rt"
-                                                    type="number" class="form-control mt-5" id="inputRt" required :disabled="!disable">
+                                                    type="number" class="form-control mt-5" id="inputRt" required :disabled="!disable" placeholder="Rt">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                     <label for="inputPassword" class="col-sm-2 col-form-label mt-5 fw-bold">Rw</label>
                                                         <div class="col-sm-5">
                                                     <input v-model="kakadata.rw" 
-                                                    type="number" class="form-control mt-5" id="inputRw" required :disabled="!disable">
+                                                    type="number" class="form-control mt-5" id="inputRw" required :disabled="!disable" placeholder="Rw">
                                                 </div>
                                             </div>
                                         </div>
@@ -65,35 +65,35 @@
                                             <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold ">Desa/Kelurahan</label>
                                                 <div class="col-sm-12">
                                             <input v-model="kakadata.desa_kelurahan"
-                                            type="text" class="form-control" id="inputdesa" required :disabled="!disable">
+                                            type="text" class="form-control" id="inputdesa" required :disabled="!disable" placeholder="Desa/Kelurahan">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                             <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold ">Kecamatan</label>
                                                 <div class="col-sm-12">
                                             <input v-model="kakadata.kecamatan"
-                                            type="text" class="form-control " id="inputRw" required :disabled="!disable">
+                                            type="text" class="form-control " id="inputRw" required :disabled="!disable" placeholder="Kelurahan">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                             <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold ">Kabupaten / Kota</label>
                                                 <div class="col-sm-12">
                                             <input v-model="kakadata.kabupaten_kota"
-                                            type="text" class="form-control" id="inputRw" required :disabled="!disable">
+                                            type="text" class="form-control" id="inputRw" required :disabled="!disable" placeholder="Kabupaten/Kota">
                                         </div>
                                     </div>
                                         <div class="form-group row">
                                         <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold ">Provinsi</label>
                                                 <div class="col-sm-12">
                                             <input v-model="kakadata.provinsi"
-                                            type="text" class="form-control" id="inputRw" required :disabled="!disable">
+                                            type="text" class="form-control" id="inputRw" required :disabled="!disable" placeholder="Provinsi">
                                         </div>
                                     </div>
                                         <div class="form-group row">
                                             <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold ">Kode Pos</label>
                                                 <div class="col-sm-12">
                                             <input v-model="kakadata.kode_pos" 
-                                            type="number" class="form-control" id="inputRw" required :disabled="!disable">
+                                            type="number" class="form-control" id="inputRw" required :disabled="!disable" placeholder="Kode Pos">
                                         </div>
                                     </div>
                                 </div>
