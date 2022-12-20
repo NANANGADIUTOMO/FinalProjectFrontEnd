@@ -15,7 +15,7 @@
                                         <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold " required>NIK</label>
                                             <div class="col-sm-12">
                                         <input v-model="datakeluarga.nik" 
-                                        type="number" class="form-control" id="inputNomor" :disabled="!disable">
+                                        type="number" class="form-control" id="inputNomor" :disabled="!disable" placeholder="Masukkan Nik">
                                         <p v-if="validate2" class="textwarning"> <small>Maaf! Nomor NIK Anda Sudah Digunakan</small> </p>
                                     </div>
                                 </div>
@@ -23,7 +23,7 @@
                                         <label for="inputAlamat" class="col-sm-7 col-form-label mt-2 fw-bold">Nama</label>
                                             <div class="col-sm-12">
                                                 <input v-model="datakeluarga.nama"
-                                                type="text" class="form-control" id="inputNomor" :disabled="!disable">
+                                                type="text" class="form-control" id="inputNomor" :disabled="!disable" placeholder="Masukkan Nama">
                                             </div>
                                 </div>
                                         <div class="form-group row">
@@ -31,7 +31,7 @@
                                                 <label for="">Jenis Kelamin</label>
                                                 <div class="col-sm-12">
                                                     <select v-model="datakeluarga.jenis_kelamin"
-                                                        class="form-control mt-2" id="inputGroupSelect01" required :disabled="!disable">
+                                                        class="form-control mt-2" id="inputGroupSelect01" required :disabled="!disable" placeholder="Jenis Kelamin">
                                                         <option selected disabled>--Pilih--</option>
                                                         <option value="Pria">Pria</option>
                                                         <option value="Wanita">Wanita</option>
@@ -43,7 +43,7 @@
                                         <label for="inputPassword" class="col-sm-7 col-form-label mt-3 fw-bold " required >Tempat Lahir</label>
                                             <div class="col-sm-12">
                                         <input v-model="datakeluarga.tempat_lahir"
-                                        type="text" class="form-control" id="inputNomor" :disabled="!disable">
+                                        type="text" class="form-control" id="inputNomor" :disabled="!disable" placeholder="Tempat Lahir">
                                     </div>
                                 </div>
                             <div>
@@ -63,14 +63,14 @@
                                     <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold ">Tanggal Lahir</label>
                                         <div class="col-sm-12">
                                     <input v-model="datakeluarga.tanggal_lahir"
-                                    type="date" class="form-control" id="inputdesa" :disabled="!disable">
+                                    type="date" class="form-control" id="inputdesa" :disabled="!disable" >
                                 </div>
                             </div>
                             <div class="form-group row">
                                     <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold ">Agama</label>
                                         <div class="col-sm-12">
                                                     <select v-model="datakeluarga.agama"
-                                                        class="form-control" id="inputGroupSelect01" required :disabled="!disable">
+                                                        class="form-control" id="inputGroupSelect01" required :disabled="!disable" placeholder="Agama">
                                                         <option selected disabled>--Pilih--</option>
                                                         <option value="Islam">Islam</option>
                                                         <option value="Hindu">Hindu</option>
@@ -85,14 +85,14 @@
                                     <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold ">Pendidikan</label>
                                         <div class="col-sm-12">
                                     <input v-model="datakeluarga.pendidikan"
-                                    type="text" class="form-control" id="inputRw" :disabled="!disable">
+                                    type="text" class="form-control" id="inputRw" :disabled="!disable" placeholder="Pendidikan">
                                 </div>
                             </div>
                                 <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-7 col-form-label mt-4 fw-bold ">Kepala Keluarga</label>
                                         <div class="col-sm-12">
                                                     <select v-model="datakeluarga.kepala_keluarga"
-                                                        class="form-control" required :disabled="!disable">
+                                                        class="form-control" required :disabled="!disable" placeholder="Kepala Keluarga">
                                                         <option selected disabled>--Pilih--</option>
                                                         <option value="Yes">Ya</option>
                                                         <option value="No">Tidak</option>
