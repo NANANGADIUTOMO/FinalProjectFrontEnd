@@ -123,7 +123,9 @@ export default {
     height: 100px;
     margin:5px ;
     padding: 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-bottom-left-radius:35px;
+    border-top-right-radius:35px;
     margin-left: 270px;
 }
 .tbl{
