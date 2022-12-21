@@ -134,7 +134,9 @@ export default {
     height: 220px;
     margin:5px ;
     padding: 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-bottom-left-radius:45px;
+    border-top-right-radius:45px;
 }
 .table{
     background-color: beige;
@@ -150,7 +152,8 @@ export default {
     height: 100px;
     background-color:cadetblue;
     margin-top: 20px;
-    border-radius: 30px;
+    border-bottom-left-radius:35px;
+    border-top-right-radius:35px;
 }
 .satu:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
@@ -162,7 +165,8 @@ export default {
     background-color:cadetblue;
     margin-top: 20px;
     margin-left: 20px;
-    border-radius: 30px;
+    border-bottom-left-radius:35px;
+    border-top-right-radius:35px;
 }
 .dua:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
