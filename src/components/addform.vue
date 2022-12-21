@@ -3,7 +3,7 @@
     <div>
             <div v-if="!formalert">
                  <div>
-                    <div  class="btnatas mt-3 mb-lg-4">
+                    <div  class="btnatas mt-3 my-lg-3">
                         <router-link to="/home" class=" btn button-30">Kembali</router-link>
                         <button v-show="uptbtn" @click="upttog" class="button-31">Perbarui Data Keluarga</button>
                         <router-link v-show="title != 'Tambah'"  :to="{name : '/listanggota'}" class="button-30">Lihat Anggota Keluarga</router-link>
