@@ -14,18 +14,20 @@
                         </div>
                 </div>
                 <div class="text">
-                    <h1>E-KTP</h1>
+                    <h1>E-KTP APP</h1>
                 </div>
             </div>
             <div class="link">
                 <div class="home">
-                    <p class=" text-center shadow"><router-link to="/home" ><h5><img src="../assets/home.png" alt="" width="25px" class="justify-content-center">Beranda</h5> </router-link></p>
+                    <p class=" text-center"><router-link to="/home" >
+                    <h5 class=""><p><img src="../assets/home.png" alt="" width="25px" class="justify-content-center">Beranda</p></h5> 
+                    </router-link></p>
                 </div>
                 <div class="tambah">
-                    <p class=" text-center shadow "><router-link to="/addKK" ><h5><img src="../assets/plus.png" alt="" width="22px">Tambah KK</h5></router-link></p>
+                    <p class=" text-center "><router-link to="/addKK" ><h5><img src="../assets/plus.png" alt="" width="22px">Tambah KK</h5></router-link></p>
                 </div>
                 <div class="out">
-                    <p class="out text-center shadow"><router-link to="/"><h5>Keluar</h5> </router-link></p>
+                    <p class="out text-center "><router-link to="/"><h5>Keluar</h5> </router-link></p>
                 </div>
             </div>
         </div>
@@ -35,7 +37,7 @@
 
 <script>
 export default {
-    name : 'sidebarComponent'
+    name : 'sidebarComponent',
 }
 </script>
 
@@ -53,7 +55,7 @@ export default {
     font-family:'Arial Narrow Bold';
     text-decoration-line :underline;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     
 }
 a{
@@ -62,13 +64,12 @@ a{
 }
 
 .link{
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 9%;
 }
 .home{
-    /* background-color: white; */
     width: 200px;
-    height: 50px;
+    height: 35px;
     border-radius: 9px;
     font-family: 'Arial Narrow Bold';
     margin-top: 10px;
@@ -78,9 +79,8 @@ a{
     transform: translateY(-2px);
 }
 .tambah{
-    /* background-color: white; */
     width: 200px;
-    height: 50px;
+    height: 35px;
     border-radius: 9px;
     margin-top: 10px;
     font-family: 'Arial Narrow Bold';
@@ -91,12 +91,11 @@ a{
     
 }
 .out{
-    /* background-color: white; */
     width: 200px;
-    height: 50px;
+    height: 35px;
     border-radius: 9px;
     font-family: 'Arial Narrow Bold';
-    margin-top: 130%;
+    margin-top: 140%;
 }
 .out:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
