@@ -19,24 +19,12 @@
                                 <input v-model="datalogin.email" type="email" required="" autocomplete="off">
                                 <label for="name">Alamat Email</label>
                             </div>
-                            <!-- <div class="form-outline mb-4">
-                                <label class="form-label" for="form3Example3">Alamat E-mail</label>
-                                <input v-model="datalogin.email"
-                                type="email" id="form3Example3" class="form-control form-control-lg"
-                                placeholder="Enter a valid email address" required>
-                            </div> -->
 
                             <!-- Password input -->
                             <div class="inputGroup">
                                 <input v-model="datalogin.password" type="password" required="" autocomplete="off">
                                 <label for="name">Password</label>
                             </div>
-                            <!-- <div class="form-outline mb-3">
-                                <label class="form-label" for="form3Example4">Password</label>
-                                <input v-model="datalogin.password" 
-                                 type="password" id="form3Example4" class="form-control form-control-lg"
-                                placeholder="Enter password" />
-                            </div> -->
                             <P v-if="massage" class="texts">Username atau Password Anda Salah</P>
                                 <div class="text-center text-lg-start mt-4 pt-2">
                                     <button type="submit" class="btn btn-primary btn-lg text-center">login</button>
@@ -87,8 +75,7 @@ methods :{
         .catch(e =>{
             console.log(e)
             alert("Nama atau Password Salah!")
-            // this.massage = true
-            location.reload();
+                 location.reload();
         })
     }
 }
