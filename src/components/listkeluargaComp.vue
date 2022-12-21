@@ -11,42 +11,44 @@
                     </div>
                 </div>
             </div>
+            <div class="tbl">
                 <div class="table" >
-                    <div class="table table-striped table-bordered table-hover mt-4 " cellspacing="0">
-                            <h1 class="text-center my-4">LIST DATA ANGGOTA KELUARGA</h1>
-                                <table class="table table-striped table-border ">
-                                    <thead width="80%">
-                                        <tr class="table-success text-center">
-                                            <th width="1%">No</th>
-                                            <th width="2%">Nik</th>
-                                            <th width="3%">Nama</th>
-                                            <th width="3%">Jenis Kelamin</th>
-                                            <th width="2%">Kepala Keluarga</th>
-                                            <th width="5%">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr v-for="(item, index) in datakeluarga" class="text-center" :key="index" width="100%">
-                                            <th width="1%">{{ index + 1}}</th>
-                                            <td width="2%">{{ item.nik }}</td>
-                                            <td width="2%">{{ item.nama }}</td>
-                                            <td width="2%">{{ item.jenis_kelamin }}</td>
-                                            <td width="2%">{{ item.kepala_keluarga }}</td>
-                                            <td class="d-flex justify-content-center" >
-                                                <router-link :to="{ name : 'lihatfams', params: {idk : item.id}}" @click.prevent="$emit('updateAnggota', item)" class="btndetail text-white text-center">Detail</router-link>
-                                                <button class="btn btn-sm btn-danger " @click.prevent="deleteAnggotaFunc(item.id)" >Hapus </button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>                                
-                                <div v-if="datakeluarga.length < 1" class=" textbawah d-flex justify-content-center text-white" style="background-color:grey;">Tidak Ada Data</div>
+                    <div>
+                        <div class="table table-striped table-bordered table-hover " cellspacing="0">
+                                <h1 class="text-center my-4 mt-3">LIST DATA ANGGOTA KELUARGA</h1>
+                                    <table class="table table-striped table-border ">
+                                        <thead width="80%">
+                                            <tr class="table-success text-center">
+                                                <th width="1%">No</th>
+                                                <th width="2%">Nik</th>
+                                                <th width="3%">Nama</th>
+                                                <th width="3%">Jenis Kelamin</th>
+                                                <th width="2%">Kepala Keluarga</th>
+                                                <th width="5%">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr v-for="(item, index) in datakeluarga" class="text-center" :key="index" width="100%">
+                                                <th width="1%">{{ index + 1}}</th>
+                                                <td width="2%">{{ item.nik }}</td>
+                                                <td width="2%">{{ item.nama }}</td>
+                                                <td width="2%">{{ item.jenis_kelamin }}</td>
+                                                <td width="2%">{{ item.kepala_keluarga }}</td>
+                                                <td class="d-flex justify-content-center" >
+                                                    <router-link :to="{ name : 'lihatfams', params: {idk : item.id}}" @click.prevent="$emit('updateAnggota', item)" class="btndetail text-white text-center">Detail</router-link>
+                                                    <button class="btn btn-sm btn-danger " @click.prevent="deleteAnggotaFunc(item.id)" >Hapus </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>                                
+                                    <div v-if="datakeluarga.length < 1" class=" textbawah d-flex justify-content-center text-white" style="background-color:grey;">Tidak Ada Data</div>
+                                </div>
                             </div>
-
+                        </div>
+                    </div>
+                </div>
+                    <formAlert v-show="formAlert" :textAlert="textAlert"></formAlert>
             </div>
-    </div>
-    <formAlert v-show="formAlert" :textAlert="textAlert"></formAlert>
-</div>
-  
 </template>
 
 <script>
@@ -123,6 +125,13 @@ export default {
     padding: 20px;
     border-radius: 10px;
     margin-left: 270px;
+}
+.tbl{
+    background-color: beige;
+    width: 1240px;
+    margin-left: 270px;
+    border-radius: 10px;
+    margin-top: 3px;
 }
 .satu{
     width: 250px;
@@ -355,14 +364,13 @@ export default {
   transform: translateY(2px);
 }
 .table{
-    margin-left: 88px;
-    width: 1243px;
-    border-radius: 10px;
-    
+    margin: 5px;
+    width: 1220px;
+    margin-bottom: 5px;
 }
 .textbawah{
-    margin-left: 88px;
-    width: 1243px;
+    margin: 5px;
+    width: 1220px;
     text-align: center;
 }
 
