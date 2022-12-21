@@ -4,7 +4,7 @@
         <p></p>
         <p>Data berhasil {{textAlert}} !</p>
         <p></p><p></p>
-        <router-link v-show="!showButton" to="/home" class="btn btn-13 mt-3">Keuar</router-link>
+        <router-link v-show="!showButton" to="/home" class="btn btn-13 mt-3">Keluar</router-link>
         <button v-show="showButton" class="btn btn-12 text-center" @click="reloadFunc">Kembali</button>
     </div>
 </template>
