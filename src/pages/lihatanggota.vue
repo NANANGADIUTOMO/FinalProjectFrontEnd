@@ -8,7 +8,6 @@
             <addformkeluarga :propsAnggota="datakeluarga"></addformkeluarga>
             <listkeluargaComp class="d-none" @updateAnggota="anggUpdate"></listkeluargaComp>
         </div>
-
     </div>
   </div>
 </template>
@@ -37,6 +36,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.d-none{
+    margin-left: 270px;
+}
 
 </style>
