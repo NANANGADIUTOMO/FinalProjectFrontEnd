@@ -78,8 +78,11 @@ export default {
             if(confirm("apakah anda akan menghapus data?")){
                 kartuservice.deleteKaka(id)
                     .then(response => {
-                        console.log(response.data);
-                        // 
+                        anggotaservice.deleteByIdKk(id)
+                        .then(response =>{
+                            console.log(response.data);
+                        })
+                        console.log(response.data); 
                         scope.$emit('deleteEmit');
                     })
                     .catch(e => {
