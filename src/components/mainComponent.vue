@@ -130,30 +130,30 @@ export default {
 }
 .breadcrumb{
     background-color: beige;
-    width: 1240px;
+    width: 1230px;
     height: 220px;
     margin:5px ;
     padding: 20px;
-    /* border-radius: 10px; */
-    border-bottom-left-radius:45px;
-    border-top-right-radius:45px;
+    border-radius: 10px;
+    /* border-bottom-left-radius:45px;
+    border-top-right-radius:45px; */
 }
 .table{
     background-color: beige;
-    width: 1240px;
+    width: 1230px;
     margin: 5px;
     border-radius: 10px;
 }
 .table-striped{
-    width: 1210px;
+    width: 1203px;
 }
 .satu{
     width: 250px;
     height: 100px;
     background-color:cadetblue;
     margin-top: 20px;
-    border-bottom-left-radius:35px;
-    border-top-right-radius:35px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
 }
 .satu:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
@@ -165,8 +165,8 @@ export default {
     background-color:cadetblue;
     margin-top: 20px;
     margin-left: 20px;
-    border-bottom-left-radius:35px;
-    border-top-right-radius:35px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
 }
 .dua:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;

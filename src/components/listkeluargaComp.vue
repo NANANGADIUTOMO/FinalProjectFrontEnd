@@ -119,18 +119,18 @@ export default {
 <style scoped>
 .breadcrumb{
     background-color: beige;
-    width: 1240px;
+    width: 1228px;
     height: 100px;
     margin:5px ;
     padding: 20px;
-    /* border-radius: 10px; */
-    border-bottom-left-radius:35px;
-    border-top-right-radius:35px;
+    border-radius: 10px;
+    /* border-bottom-left-radius:35px;
+    border-top-right-radius:35px; */
     margin-left: 270px;
 }
 .tbl{
     background-color: beige;
-    width: 1240px;
+    width: 1228px;
     margin-left: 270px;
     border-radius: 10px;
     margin-top: 3px;
@@ -367,7 +367,7 @@ export default {
 }
 .table{
     margin: 5px;
-    width: 1220px;
+    width: 1203px;
     margin-bottom: 5px;
 }
 .textbawah{
