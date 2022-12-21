@@ -20,7 +20,7 @@
                                 <div class="comp">
                                     <div>
                                         <div class="inputGroup">
-                                            <input v-model="regisdata.nama" type="text" required="" autocomplete="off">
+                                            <input v-model="regisdata.nama" type="text" required="Nama Tidak Boleh kosong!" autocomplete="off">
                                             <label for="name">Nama Lengkap</label>
                                         </div>
                                     </div>
@@ -52,6 +52,7 @@
                                     <router-link to="/" type="button" class="btn btn-danger btn-lg text-center"
                                      v-if="btnlogin">login</router-link>
                                 </div>
+                                
                                 <div class="text-center text-lg-start mt-4 pt-2 mb-5 mr-4">
                                     <button type="submit" class="btn btn-primary btn-lg text-center"
                                     v-if="btnregister">Register</button>
@@ -107,7 +108,6 @@ methods : {
                 this.regisdata = {};
                 this.password2 = "";
                     alert("Register Berhasil Silahkan Login!")
-                this.btnlogin = true;
             })
             .catch(e => {
                 console.log(e);
@@ -132,9 +132,10 @@ methods : {
     width: 70%;
     height: 555px;
     margin-left: 15%;
-    margin-top: 30px;
-    
+    margin-top: 45px;
+    position: absolute;
 }
+
 .text{
     margin-left: 39% ;
 }
