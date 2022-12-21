@@ -24,5 +24,8 @@ class anggotaservice {
     getIdKk(id_kk){
         return http.get(`/anggotakeluarga/getIdKk/${id_kk}`);
     }
+    deleteByIdKk(id_kk){
+        return http.delete(`/anggotakeluarga/deleteByIdKk/${id_kk}`);
+    }
 }
 export default new anggotaservice();
