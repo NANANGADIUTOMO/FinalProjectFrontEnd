@@ -23,67 +23,30 @@
                                             <input v-model="regisdata.nama" type="text" required="" autocomplete="off">
                                             <label for="name">Nama Lengkap</label>
                                         </div>
-                                        <!-- <div class="form-row mb-2">
-                                            <label class="form-label" for="form3Example3">Nama Lengkap</label>
-                                            <div class="col-sm-12 ">
-                                                <input v-model="regisdata.nama"
-                                                type="text"  class="form-control form-control-lg mr-3"
-                                                placeholder="Masukkan Nama Anda" />
-                                            </div>
-                                        </div> -->
                                     </div>
                                     <div>
                                         <div class="inputGroup">
                                             <input v-model="regisdata.email" type="text" required="" autocomplete="off">
                                             <label for="name">Alamat Email</label>
                                         </div>
-                                        <!-- <div class="form-row mb-2">
-                                            <label class="form-label" for="form3Example3">E-mail</label>
-                                            <div class="col-sm-12 ">
-                                                <input v-model="regisdata.email" 
-                                                 type="email"  class="form-control form-control-lg"
-                                                placeholder="Masukkan Email anda" />
-                                            </div>
-                                        </div> -->
                                     </div>
                                     <div>
                                         <div class="inputGroup">
                                             <input v-model="regisdata.password" type="password" required="" autocomplete="off">
                                             <label for="name">Password</label>
                                         </div>
-                                        <!-- <div class="form-row mb-2">
-                                            <label class="form-label" for="form3Example3">Password</label>
-                                            <div class="col-sm-12 ">
-                                                <input 
-                                                v-model="regisdata.password" 
-                                                type="password" id="form3Example3" class="form-control form-control-lg"
-                                                placeholder=" Password Anda" />
-                                            </div>
-                                        </div> -->
                                     </div>
                                     <div>
                                         <div class="inputGroup">
                                             <input v-model="password2" type="password" required="" autocomplete="off">
                                             <label for="name">Re-Password</label>
                                         </div>
-                                        <!-- <div class="form-row mb-2">
-                                            <label class="form-label" for="form3Example3">Re-Password</label>
-                                            <div class="col-sm-12 ">
-                                                <input
-                                                v-model="password2"
-                                                type="password"  class="form-control form-control-lg"
-                                                placeholder="Ulangi Password Anda" />
-                                            </div>
-                                        </div> -->
                                     </div>
                                 </div>
 
                                 <div>
                                 </div>
                             </div>
-                                <!-- <p v-if="Success" class="fw-bold mt-2">Berhasil Daftar !, Silahkan Login !</p>
-                                 <p v-if="emailValid" class="textemail">Email Sudah Digunakan !</p> 
-                                <p v-if="passwordValid" class="textpass">Password Tidak Sama</p> -->
                             <div class="d-flex">
                                 <div class="text-center text-lg-start pt-2 ml-3 mb-4 mt-4 mr-5" >
                                     <router-link to="/" type="button" class="btn btn-danger btn-lg text-center"
@@ -128,9 +91,6 @@ data(){
             "password" : null
         },
         password2 : "",
-        // Success : false,
-        // emailValid : false,
-        // passwordValid : false,
         btnlogin : true,
         btnregister : true,
     }
@@ -140,31 +100,23 @@ methods : {
         let data = this.regisdata;
         let password1 = data.password;
         let password2 = this.password2;
-
-        // this.Success = false;
-        //  this.emailValid = false;
-        // this.passwordValid = false;
         if(password1 == password2){
             userservice.create(data)
             .then(response =>{ 
                 console.log(response);
                 this.regisdata = {};
                 this.password2 = "";
-                alert("Register Berhasil Silahkan Login!")
-                // this.Success = true;
+                    alert("Register Berhasil Silahkan Login!")
                 this.btnlogin = true;
-                this.btnregister = false
             })
             .catch(e => {
                 console.log(e);
                 if(e.response.data.status === 500){
-                    // this.emailValid = true;
                     alert("Alamat email Sudah digunakan")
                     location.reload();
                 }
             })
         }else{
-            // this.passwordValid = true;
             alert("Password Tidak Sama !")
                     location.reload();
         }
