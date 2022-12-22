@@ -16,9 +16,9 @@
                     <div>
                         <div class="table table-striped table-bordered table-hover " cellspacing="0">
                                 <h1 class="text-center my-4 mt-3">LIST DATA ANGGOTA KELUARGA</h1>
-                                    <table class="table table-striped table-border ">
+                                    <table class=" table table-striped table-border ">
                                         <thead width="80%">
-                                            <tr class="table-success text-center">
+                                            <tr class="tabletbl text-center">
                                                 <th width="1%">No</th>
                                                 <th width="2%">Nik</th>
                                                 <th width="3%">Nama</th>
@@ -134,6 +134,10 @@ export default {
     margin-left: 270px;
     border-radius: 10px;
     margin-top: 3px;
+}
+.tabletbl{
+    background-color: blue;
+    color: white;
 }
 .satu{
     width: 250px;
