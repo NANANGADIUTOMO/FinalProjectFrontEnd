@@ -5,7 +5,7 @@
             <form class="corn" @submit.prevent="inputkeluarga">
                     <h3>{{title}} Anggota keluarga</h3>
                     <p></p>
-                        <div class="d-flex justify-content-left mx-4 mt-5 mb-lg-4">
+                        <div class="d-flex justify-content-left mx-4 mt-3 mb-lg-4">
                             <router-link :to="{name : '/listanggota'}" class="btn btn-15 btn-lg">Kembali</router-link>
                             <button v-show="uptbutton" @click="updttogg" type="button"  class="button-30">Perbarui Data Keluarga</button>
                         </div>
@@ -243,7 +243,7 @@ export default {
 .rose{
     border: 2px solid black;
     width: 99%;
-    height: 487px;
+    height: 496px;
     margin-top: 2px;
     border-radius: 10px;
     padding: 20px;
