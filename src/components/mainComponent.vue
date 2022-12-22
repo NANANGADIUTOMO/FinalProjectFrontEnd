@@ -3,7 +3,7 @@
     <div>
         <div class="breadcrumb">
                     <div class="isi">
-                            <h1 class="display-">Halaman Beranda</h1>
+                            <h1 class="display-">HALAMAN BERANDA</h1>
                         <div class="ctn">
                             <div class="satu shadow" >
                                 <p>Jumlah Kartu keluarga</p>
@@ -22,11 +22,11 @@
          <div class="table">
             <div class="tbl">
                 <div>
-                    <div class="table table-striped table-bordered table-hover mt-4" cellspacing="0">
+                    <div class="table table-striped table-bordered table-hover mt-2" cellspacing="0">
                          <h1 class="text-center my-4">DATA KARTU KELUARGA</h1>
                             <table class="table table-striped table-border ">
                                 <thead>
-                                    <tr class="table-success text-center ">
+                                    <tr class="tabletbl text-center ">
                                         <th scope="col-3">No</th>
                                         <th scope="col">Nomor KK</th>
                                         <th scope="col">Alamat</th>
@@ -147,6 +147,10 @@ export default {
 .table-striped{
     width: 1203px;
 }
+.tabletbl{
+    background-color: blue;
+    color: white;
+}
 .satu{
     width: 250px;
     height: 100px;
@@ -154,6 +158,7 @@ export default {
     margin-top: 20px;
     border-bottom-left-radius:20px;
     border-top-right-radius:20px;
+    
 }
 .satu:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
