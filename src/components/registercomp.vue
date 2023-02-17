@@ -181,7 +181,7 @@ height: 100%;
   outline: none;
   border: 2px solid black;
   background-color: transparent;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100%;
 }
 

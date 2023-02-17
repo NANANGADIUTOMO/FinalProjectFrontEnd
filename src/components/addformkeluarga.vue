@@ -15,7 +15,7 @@
                                         <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold " required>NIK</label>
                                             <div class="col-sm-12">
                                         <input v-model="datakeluarga.nik" 
-                                        type="number" class="form-control" id="inputNomor" :disabled="!disable" placeholder="Masukkan Nik">
+                                        type="number" class="form-control" id="inputNomor" :disabled="NoNik" placeholder="Masukkan Nik">
                                         <p v-if="validate2" class="textwarning"> <small>Maaf! Nomor NIK Anda Sudah Digunakan</small> </p>
                                     </div>
                                 </div>
@@ -137,7 +137,8 @@ export default {
             disable : false,
             updtShow : false,
             uptbutton : false,
-            validate2 : false
+            validate2 : false,
+            NoNik : true
         }
     },
     methods: {
@@ -203,6 +204,7 @@ export default {
             this.uptbutton = true
         }else if(this.title == 'Tambah'){
             this.disable = true;
+            this.NoNik = false
         }
 
         }

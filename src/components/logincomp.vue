@@ -5,7 +5,7 @@
                 <section class="vh-98">
                     <div class="container-fluid h-custom">
                         <div class="row d-flex justify-content-center align-items-center h-98">    
-                        <div class="col-md-9 col-lg-6 col-xl-5">
+                        <div class="col-md-9 col-lg-6 col-xl-5 mt-4">
                             <img src="../assets/ktp.png"
                             class="img-fluid" alt="Sample image">
                         </div>
@@ -138,7 +138,7 @@ height: 100%;
   outline: none;
   border: 2px solid black;
   background-color: transparent;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100%;
 }
 
@@ -159,6 +159,7 @@ height: 100%;
   margin-left: 1.3em;
   padding: 0.4em;
   background-color:transparent;
+  /* border-radius: 30px; */
 }
 
 .inputGroup :is(input:focus, input:valid) {

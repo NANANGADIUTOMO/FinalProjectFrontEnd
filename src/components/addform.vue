@@ -20,7 +20,7 @@
                                                 <label for="inputPassword" class="col-sm-7 col-form-label mt-2 fw-bold " >Nomor Kartu Keluarga</label>
                                                     <div class="col-sm-12 ">
                                                 <input v-model="kakadata.nomor_kk"
-                                                type="number" class="form-control" id="inputNomor" :disabled="!disable" required="" placeholder="No KK">
+                                                type="number" class="form-control" id="inputNomor" :disabled="noKK" required="" placeholder="No KK">
                                                 <p v-if="validate" class="textvalidate"><small> Mohon Maaf! Nomor Kartu Keluarga Sudah Digunakan </small></p>
                                             </div>
                                         </div>
@@ -136,6 +136,7 @@ export default {
             updateShow : false,
             uptbtn     : false,
             validate : false,
+            noKK : true
         }
     },
     methods : {
@@ -197,6 +198,8 @@ export default {
             this.uptbtn = true
         }else if(this.title == 'Tambah'){
             this.disable = true
+            this.noKK = false
+            
         }
     },
 
@@ -206,10 +209,10 @@ export default {
 <style scoped>
 .corn{
     width: 1245px;
-    height: 592px;
+    height: 599px;
     border: 2px solid burlywood;
     padding: 5px;
-    margin-top: 8px;
+    margin-top: 10px;
     border-radius: 10px;
     background-color: white;
     margin-left: 260px;

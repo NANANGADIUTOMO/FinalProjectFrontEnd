@@ -130,22 +130,21 @@ export default {
 }
 .breadcrumb{
     background-color: beige;
-    width: 1230px;
+    width: 1245px;
     height: 220px;
     margin:5px ;
     padding: 20px;
     border-radius: 10px;
-    /* border-bottom-left-radius:45px;
-    border-top-right-radius:45px; */
+
 }
 .table{
     background-color: beige;
-    width: 1230px;
+    width: 1245px;
     margin: 5px;
     border-radius: 10px;
 }
 .table-striped{
-    width: 1203px;
+    width: 1205px;
 }
 .tabletbl{
     background-color: blue;
@@ -156,13 +155,14 @@ export default {
     height: 100px;
     background-color:cadetblue;
     margin-top: 20px;
-    border-bottom-left-radius:20px;
-    border-top-right-radius:20px;
+    border-bottom-left-radius:30px;
+    border-top-right-radius:30px;
     
 }
 .satu:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
-    transform: translateY(-2px);
+    transform: translateY(-6px);
+    /* transform: translate3d(-4px); */
 }
 .dua{
     width: 250px;
@@ -170,8 +170,8 @@ export default {
     background-color:cadetblue;
     margin-top: 20px;
     margin-left: 20px;
-    border-bottom-left-radius:20px;
-    border-top-right-radius:20px;
+    border-bottom-left-radius:30px;
+    border-top-right-radius:30px;
 }
 .dua:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
@@ -187,24 +187,16 @@ export default {
     
 }
 .satu p{
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 10px;
     font-family: 'Arial Narrow Bold';
-    font-size: 20px;
+    font-size: 22px;
 }
 .dua p{
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 10px;
     font-family: 'Arial Narrow Bold';
-    font-size: 20px;
-}
-.ini{
-    font-size: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.itu{
-    font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 22px;
 }
 .btndetail{
   align-items: center;
