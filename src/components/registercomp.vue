@@ -126,7 +126,7 @@
             >
               <!-- Copyright -->
               <div class="text-white mb-3 mb-md-0">
-                Copyright © 2022. Build By Nanang.
+                Copyright © 2022. Build By Nanang Adi Utomo.
               </div>
             </div>
           </section>
