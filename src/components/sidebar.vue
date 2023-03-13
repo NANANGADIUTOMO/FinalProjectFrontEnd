@@ -1,208 +1,235 @@
 <template>
-<div>
+  <div>
     <div class="sidebar shadow">
-        <div>
-            <div class="text">
-                <div class="load">
-                    <div class="spinner">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        </div>
-                </div>
-                <div class="text">
-                    <h1>E-KTP APP</h1>
-                </div>
+      <div>
+        <div class="text">
+          <div class="load">
+            <div class="spinner">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
             </div>
-            <div class="link">
-                <div class="home">
-                    <p class=" text-center"><router-link to="/home" >
-                    <h5 class=""><p><img src="../assets/home.png" alt="" width="25px" class="justify-content-center">Beranda</p></h5> 
-                    </router-link></p>
-                </div>
-                <div class="tambah">
-                    <p class=" text-center "><router-link to="/addKK" ><h5><img src="../assets/plus.png" alt="" width="22px">Tambah KK</h5></router-link></p>
-                </div>
-                <div class="out">
-                    <p class="out text-center "><router-link to="/"><h5>Keluar</h5> </router-link></p>
-                </div>
-            </div>
+          </div>
+          <div class="text">
+            <h1>E-KTP APP</h1>
+          </div>
         </div>
+        <div class="link">
+          <div class="home">
+            <p class="textberanda">
+              <router-link to="/home">
+                <h5 class="">
+                  <p>
+                    <img
+                      src="../assets/home.png"
+                      alt=""
+                      width="25px"
+                      class="justify-content-left"
+                    />Beranda
+                  </p>
+                </h5>
+              </router-link>
+            </p>
+          </div>
+          <div class="tambah">
+            <p class="texttambah">
+              <router-link to="/addKK"
+                ><h5>
+                  <img src="../assets/plus.png" alt="" width="22px" />Tambah
+                  Data KK
+                </h5></router-link
+              >
+            </p>
+          </div>
+          <div class="out">
+            <p class="out text-center">
+              <router-link to="/"><h5>Keluar</h5> </router-link>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
 export default {
-    name : 'sidebarComponent',
-}
+  name: "sidebarComponent",
+};
 </script>
 
 <style scoped>
-.sidebar{
-    background-color: cadetblue;
-    width: 250px;
-    height: 675px;
-    margin: 5px;
-    border-radius: 10px;
-    position: fixed;
-    
+.textberanda {
+  margin-left: 10px;
 }
-.text{
-    font-family:'Arial Narrow Bold';
-    text-decoration-line :underline;
-    text-align: center;
-    margin-top: 30px;
-    
+.texttambah {
+  margin-left: 10px;
 }
-a{
-    text-decoration: none;
-    color: black;
+.sidebar {
+  background-color: cadetblue;
+  width: 250px;
+  height: 680px;
+  margin: 5px;
+  border-radius: 10px;
+  position: fixed;
+}
+.text {
+  font-family: "Arial Narrow Bold";
+  text-decoration-line: underline;
+  text-align: center;
+  margin-top: 30px;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.link{
-    margin-top: 15%;
-    margin-left: 9%;
+.link {
+  margin-top: 15%;
+  margin-left: 9%;
+  margin-right: 10%;
 }
-.home{
-    width: 200px;
-    height: 35px;
-    border-radius: 9px;
-    font-family: 'Arial Narrow Bold';
-    margin-top: 10px;
+.home {
+  width: 200px;
+  height: 35px;
+  border-radius: 9px;
+  font-family: "Arial Narrow Bold";
+  margin-top: 10px;
 }
-.home:hover{
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
-    transform: translateY(-2px);
+.home:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
+  transform: translateY(-2px);
 }
-.tambah{
-    width: 200px;
-    height: 35px;
-    border-radius: 9px;
-    margin-top: 10px;
-    font-family: 'Arial Narrow Bold';
+.tambah {
+  width: 200px;
+  height: 35px;
+  border-radius: 9px;
+  margin-top: 10px;
+  font-family: "Arial Narrow Bold";
 }
-.tambah:hover{
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
-    transform: translateY(-2px);
-    
+.tambah:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
+  transform: translateY(-2px);
 }
-.out{
-    width: 200px;
-    height: 35px;
-    border-radius: 9px;
-    font-family: 'Arial Narrow Bold';
-    margin-top: 140%;
+.out {
+  width: 200px;
+  height: 35px;
+  border-radius: 9px;
+  font-family: "Arial Narrow Bold";
+  margin-top: 140%;
 }
-.out:hover{
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
-    transform: translateY(-2px);
+.out:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, black 0 -3px 0 inset;
+  transform: translateY(-2px);
 }
-.load{
-    margin-top: 30px;
-    margin-left: 43%;
-    margin-bottom: 10px;
+.load {
+  margin-top: 30px;
+  margin-left: 43%;
+  margin-bottom: 10px;
 }
 .spinner {
- width: 44px;
- height: 44px;
- animation: spinner-y0fdc1 2s infinite ease;
- transform-style: preserve-3d;
+  width: 44px;
+  height: 44px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
 }
 
 .spinner > div {
- background-color: rgba(0,77,255,0.2);
- height: 100%;
- position: absolute;
- width: 100%;
- border: 2px solid #004dff;
+  background-color: rgba(0, 77, 255, 0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #004dff;
 }
 
 .spinner div:nth-of-type(1) {
- transform: translateZ(-22px) rotateY(180deg);
+  transform: translateZ(-22px) rotateY(180deg);
 }
 
 .spinner div:nth-of-type(2) {
- transform: rotateY(-270deg) translateX(50%);
- transform-origin: top right;
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
 }
 
 .spinner div:nth-of-type(3) {
- transform: rotateY(270deg) translateX(-50%);
- transform-origin: center left;
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
 }
 
 .spinner div:nth-of-type(4) {
- transform: rotateX(90deg) translateY(-50%);
- transform-origin: top center;
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
 }
 
 .spinner div:nth-of-type(5) {
- transform: rotateX(-90deg) translateY(50%);
- transform-origin: bottom center;
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
 }
 
 .spinner div:nth-of-type(6) {
- transform: translateZ(22px);
+  transform: translateZ(22px);
 }
 
 .spinner {
- width: 44px;
- height: 44px;
- animation: spinner-y0fdc1 2s infinite ease;
- transform-style: preserve-3d;
+  width: 44px;
+  height: 44px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
 }
 
 .spinner > div {
- background-color: rgba(0,77,255,0.2);
- height: 100%;
- position: absolute;
- width: 100%;
- border: 2px solid #004dff;
+  background-color: rgba(0, 77, 255, 0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #004dff;
 }
 
 .spinner div:nth-of-type(1) {
- transform: translateZ(-22px) rotateY(180deg);
+  transform: translateZ(-22px) rotateY(180deg);
 }
 
 .spinner div:nth-of-type(2) {
- transform: rotateY(-270deg) translateX(50%);
- transform-origin: top right;
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
 }
 
 .spinner div:nth-of-type(3) {
- transform: rotateY(270deg) translateX(-50%);
- transform-origin: center left;
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
 }
 
 .spinner div:nth-of-type(4) {
- transform: rotateX(90deg) translateY(-50%);
- transform-origin: top center;
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
 }
 
 .spinner div:nth-of-type(5) {
- transform: rotateX(-90deg) translateY(50%);
- transform-origin: bottom center;
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
 }
 
 .spinner div:nth-of-type(6) {
- transform: translateZ(22px);
+  transform: translateZ(22px);
 }
 
 @keyframes spinner-y0fdc1 {
- 0% {
-  transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
- }
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
 
- 50% {
-  transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
- }
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
 
- 100% {
-  transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
- }
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
 }
 </style>
